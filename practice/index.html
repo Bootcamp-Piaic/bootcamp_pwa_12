@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello Awais Mansha</h1>
+    <script>
+        if ("serviceWorker" in navigator) { // navigator is a detector for detecting all the browsers features
+            // it is checking that service worker is in browser or not
+
+            navigator.serviceWorker.register('sw.js').then((data) => {
+                // Registration was successful
+                console.log('navigator: ', data)
+
+            })
+        }
+    </script>
+</body>
+
+</html>
